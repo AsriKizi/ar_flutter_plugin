@@ -35,6 +35,15 @@ android {
     defaultConfig {
         minSdkVersion 24
     }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8  // Tetapkan ke Java 1.8
+        targetCompatibility = JavaVersion.VERSION_1_8  // Tetapkan ke Java 1.8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"  // Pastikan Kotlin juga menggunakan Java 1.8
+    }
 }
 
 dependencies {
